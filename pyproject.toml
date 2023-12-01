@@ -1,0 +1,35 @@
+# pyproject.toml
+
+[build-system]
+  requires = ["setuptools>=65.0.0"]
+  build-backend = "setuptools.build_meta"
+
+[project]
+  name = "notion-recurring-tasks"
+  version = "0.0.1"
+  authors = [
+    { name = "Theodor Blom", email = "me@theodorblom.com" },
+  ]
+  description = "Using the Notion API to achieve recurring tasks within Notion"
+  readme = "README.md"
+  requires-python = ">=3.12,<3.13"
+  classifiers = [
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+  ]
+  dependencies = [
+    "requests >= 2.31, < 3",
+    "python-dateutil >= 2.8.2, < 3",
+    "python-dotenv >= 1.0.0, < 2",
+  ]
+
+[project.optional-dependencies]
+  dev = [
+    "pytest >= 7, < 8",
+  ]
+
+[project.urls]
+  homepage = "https://github.com/Theeoi/notion-recurring-tasks"
+
+[project.scripts]
+  notion-recurring-tasks = "main:main"
