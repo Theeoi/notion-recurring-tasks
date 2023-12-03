@@ -1,6 +1,8 @@
 # Notion Recurring Tasks
 
-*Short catchy description*
+![Run Pytest](https://github.com/Theeoi/notion-recurring-tasks/actions/workflows/test.yml/badge.svg?label=Tests)
+
+Using the Notion API to achieve recurring tasks within Notion
 
 ## General Information
 

@@ -25,8 +25,13 @@
 
 [project.optional-dependencies]
   dev = [
-    "pytest >= 7, < 8",
+    "pytest >= 7.4.3, < 8",
+    "pytest-cov >= 4.1.0, < 5",
   ]
+
+[tool.pytest.ini_options]
+  addopts = "-v --cov='src'"
+  testpaths = "tests"
 
 [project.urls]
   homepage = "https://github.com/Theeoi/notion-recurring-tasks"
