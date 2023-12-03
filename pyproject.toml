@@ -6,7 +6,7 @@
 
 [project]
   name = "notion-recurring-tasks"
-  version = "0.0.1"
+  version = "1.0.0"
   authors = [
     { name = "Theodor Blom", email = "me@theodorblom.com" },
   ]
