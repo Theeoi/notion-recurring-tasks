@@ -1,6 +1,5 @@
 #!/usr/bin/env python
-"""dataprocessing.py
-
+"""
 Module for processing task data. 
 """
 
@@ -74,7 +73,7 @@ def calc_new_due_date(task: dict) -> str | None:
         task (dict): A task as returned by the Notion API.
 
     Returns:
-        str | None: _description_
+        str | None: New due date. None if not set.
     """
     props: dict = get_task_properties(task)
 

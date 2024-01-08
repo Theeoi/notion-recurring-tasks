@@ -1,6 +1,5 @@
 #!/usr/bin/env python
-"""main.py
-
+"""
 The main module of notion-recurring-tasks.
 """
 

@@ -1,6 +1,5 @@
 #!/usr/bin/env python
-"""notion_api.py
-
+"""
 Code related to the interaction with the Notion API.
 """
 
@@ -15,6 +14,11 @@ NOTION_API_URL: str = "https://api.notion.com/v1"
 
 
 def get_headers() -> dict[str, str]:
+    """Get the headers for the Notion API call.
+
+    Returns:
+        dict[str, str]: Header dictionary for Notion API
+    """
     return {
         "Authorization": f"Bearer {os.getenv('NOTION_KEY')}",
         "Content-Type": "application/json",
@@ -24,7 +28,7 @@ def get_headers() -> dict[str, str]:
 
 class Calls:
     """
-    Gathers the available API calls. \\
+    Gathers the available API calls.
     All methods return the response in json-format and raises an HTTPError if unsuccesful.
     """
 
