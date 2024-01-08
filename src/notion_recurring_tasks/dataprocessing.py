@@ -84,14 +84,20 @@ def calc_new_due_date(task: dict) -> str | None:
     else:
         match props["recur_unit"]:
             case "Days":
-                return str(props["due_date"] + relativedelta(days=+props["recur_int"]))
+                return str(
+                    props["due_date"] + relativedelta(days=+props["recur_interval"])
+                )
             case "Weeks":
-                return str(props["due_date"] + relativedelta(weeks=+props["recur_int"]))
+                return str(
+                    props["due_date"] + relativedelta(weeks=+props["recur_interval"])
+                )
             case "Months":
                 return str(
-                    props["due_date"] + relativedelta(months=+props["recur_int"])
+                    props["due_date"] + relativedelta(months=+props["recur_interval"])
                 )
             case "Years":
-                return str(props["due_date"] + relativedelta(years=+props["recur_int"]))
+                return str(
+                    props["due_date"] + relativedelta(years=+props["recur_interval"])
+                )
             case _:
                 return str(props["due_date"])

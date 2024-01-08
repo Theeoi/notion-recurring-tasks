@@ -3,8 +3,8 @@
 The main module of notion-recurring-tasks.
 """
 
-import dataprocessing
-import notion_api
+from notion_recurring_tasks import notion_api
+from notion_recurring_tasks import dataprocessing
 from requests import HTTPError
 
 

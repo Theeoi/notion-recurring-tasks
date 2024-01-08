@@ -37,4 +37,4 @@
   homepage = "https://github.com/Theeoi/notion-recurring-tasks"
 
 [project.scripts]
-  notion-recurring-tasks = "main:main"
+  notion-recurring-tasks = "notion_recurring_tasks.main:main"
