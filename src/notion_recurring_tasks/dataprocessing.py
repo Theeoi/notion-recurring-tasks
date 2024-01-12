@@ -1,14 +1,14 @@
 #!/usr/bin/env python
-"""dataprocessing.py
-
+"""
 Module for processing task data. 
 """
 
 from datetime import date
+from typing import Optional
 from dateutil.relativedelta import relativedelta
 
 
-def get_task_properties(task: dict) -> dict:
+def get_task_properties(task: dict) -> dict[str, Optional[str | int | date]]:
     """Get properties of a task.
 
     Args:
@@ -18,7 +18,7 @@ def get_task_properties(task: dict) -> dict:
         dict: Task properties in a easily parsable format.
     """
 
-    def get_due_date(prop: dict) -> date | None:
+    def get_due_date(prop: dict) -> Optional[date]:
         """Get the due date property.
 
         Args:
@@ -32,7 +32,7 @@ def get_task_properties(task: dict) -> dict:
         except TypeError:
             return prop["Due Date"]["date"]
 
-    def get_recur_interval(prop: dict) -> int:
+    def get_recur_interval(prop: dict) -> Optional[int]:
         """Get the recur interval property.
 
         Args:
@@ -43,7 +43,7 @@ def get_task_properties(task: dict) -> dict:
         """
         return prop["RecurInterval"]["number"]
 
-    def get_recur_unit(prop: dict) -> str | None:
+    def get_recur_unit(prop: dict) -> Optional[str]:
         """Get the recur interval property.
 
         Args:
@@ -57,7 +57,7 @@ def get_task_properties(task: dict) -> dict:
         except TypeError:
             return prop["RecurUnit"]["select"]
 
-    properties: dict = {}
+    properties: dict[str, Optional[str | int | date]] = {}
     prop: dict = task["properties"]
 
     properties["due_date"] = get_due_date(prop)
@@ -67,14 +67,14 @@ def get_task_properties(task: dict) -> dict:
     return properties
 
 
-def calc_new_due_date(task: dict) -> str | None:
+def calc_new_due_date(task: dict) -> Optional[str]:
     """Calculate new due date from current task properties.
 
     Args:
         task (dict): A task as returned by the Notion API.
 
     Returns:
-        str | None: _description_
+        str | None: New due date. None if not set.
     """
     props: dict = get_task_properties(task)
 
@@ -85,14 +85,20 @@ def calc_new_due_date(task: dict) -> str | None:
     else:
         match props["recur_unit"]:
             case "Days":
-                return str(props["due_date"] + relativedelta(days=+props["recur_int"]))
+                return str(
+                    props["due_date"] + relativedelta(days=+props["recur_interval"])
+                )
             case "Weeks":
-                return str(props["due_date"] + relativedelta(weeks=+props["recur_int"]))
+                return str(
+                    props["due_date"] + relativedelta(weeks=+props["recur_interval"])
+                )
             case "Months":
                 return str(
-                    props["due_date"] + relativedelta(months=+props["recur_int"])
+                    props["due_date"] + relativedelta(months=+props["recur_interval"])
                 )
             case "Years":
-                return str(props["due_date"] + relativedelta(years=+props["recur_int"]))
+                return str(
+                    props["due_date"] + relativedelta(years=+props["recur_interval"])
+                )
             case _:
                 return str(props["due_date"])

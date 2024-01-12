@@ -1,11 +1,10 @@
 #!/usr/bin/env python
-"""main.py
-
+"""
 The main module of notion-recurring-tasks.
 """
 
-import dataprocessing
-import notion_api
+from notion_recurring_tasks import notion_api
+from notion_recurring_tasks import dataprocessing
 from requests import HTTPError
 
 
@@ -23,7 +22,7 @@ def main() -> None:
         try:
             notion_api.update_task_properties(task["id"], new_due_date)
         except HTTPError:
-            print(f"Failed to update {task["properties"]["Name"]["title"][0]["plain_text"]}")
+            print(f"Failed to update {task["properties"]["Name"]["title"][0]["plain_text"]}.")
         else:
             num_updated_tasks += 1
 

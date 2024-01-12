@@ -1,6 +1,5 @@
 #!/usr/bin/env python
-"""notion_api.py
-
+"""
 Code related to the interaction with the Notion API.
 """
 
@@ -12,16 +11,24 @@ from dotenv import load_dotenv
 load_dotenv()
 
 NOTION_API_URL: str = "https://api.notion.com/v1"
-HEADERS: dict[str, str] = {
-    "Authorization": f"Bearer {os.getenv('NOTION_KEY')}",
-    "Content-Type": "application/json",
-    "Notion-Version": "2022-06-28",
-}
+
+
+def get_headers() -> dict[str, str]:
+    """Get the headers for the Notion API call.
+
+    Returns:
+        dict[str, str]: Header dictionary for Notion API
+    """
+    return {
+        "Authorization": f"Bearer {os.getenv('NOTION_KEY')}",
+        "Content-Type": "application/json",
+        "Notion-Version": "2022-06-28",
+    }
 
 
 class Calls:
     """
-    Gathers the available API calls. \\
+    Gathers the available API calls.
     All methods return the response in json-format and raises an HTTPError if unsuccesful.
     """
 
@@ -39,7 +46,7 @@ class Calls:
             dict: Response data in json format.
         """
         response = requests.post(
-            f"{NOTION_API_URL}/search", headers=HEADERS, json=params
+            f"{NOTION_API_URL}/search", headers=get_headers(), json=params
         )
         response.raise_for_status()
         return response.json()
@@ -59,7 +66,9 @@ class Calls:
             dict: Response data in json format.
         """
         response = requests.post(
-            f"{NOTION_API_URL}/databases/{db_id}/query", headers=HEADERS, json=params
+            f"{NOTION_API_URL}/databases/{db_id}/query",
+            headers=get_headers(),
+            json=params,
         )
         response.raise_for_status()
         return response.json()
@@ -80,7 +89,7 @@ class Calls:
         """
         properties = {"properties": new_properties}
         response = requests.patch(
-            f"{NOTION_API_URL}/pages/{page_id}", headers=HEADERS, json=properties
+            f"{NOTION_API_URL}/pages/{page_id}", headers=get_headers(), json=properties
         )
         response.raise_for_status()
         return response.json()

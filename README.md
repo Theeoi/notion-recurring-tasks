@@ -59,7 +59,7 @@ There are currently no new features planned.
 TODO:
 
 - [ ] Implement testing suite
-- [ ] Refactor script
+- [x] Refactor script
 
 Room for Improvement:
 
