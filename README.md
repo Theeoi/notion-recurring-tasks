@@ -33,7 +33,7 @@ To use the package do the following:
 ```
 # the .env file
 
-NOTION_KEY = "[secret_string]"
+NOTION_KEY = "secret_string"
 ```
 3. Run `pip install .` to install the script (in a venv if you want)
 4. Run `notion-recurring-tasks` to run the script
@@ -51,19 +51,21 @@ To develop this code you should do the following:
 
 ## Project Status
 
-The first version of this script was hastely put together to get recurring tasks to work. Sporadic work is being done to improve the code.
+The code has been cleaned up and tests are added. The focus is now on getting this package published and create documentation such that *anyone* can use it.
 There are currently no new features planned.
 
 ### Roadmap
 
 TODO:
 
-- [ ] Implement testing suite
+- [x] Implement testing suite
 - [x] Refactor script
+- [ ] Add documentation
+- [ ] Add --env flag to programatically add your own notion_key
 
 Room for Improvement:
 
-- Update this README to allow non-tech users to add this to their Notion
+- Update this README (and docs) to allow non-tech users to add this to their Notion
 
 ## Contact
 
