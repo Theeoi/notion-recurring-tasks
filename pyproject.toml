@@ -31,7 +31,7 @@
   ]
 
 [tool.pytest.ini_options]
-  addopts = "-v --cov='src'"
+  addopts = "-v --cov=./src"
   testpaths = "tests"
 
 [project.urls]
