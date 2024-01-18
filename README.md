@@ -7,8 +7,7 @@ Using the Notion API to achieve recurring tasks in Notion.
 
 ## General Information
 
-Notion is a great productivity tool for tracking goals, projects and tasks. However, achieving recurring tasks (tasks that reappear at a set interval) is a hassle and requires manual intervention.
-Thanks to the Notion API this changes as we can access our task data programatically and make specific tasks recurring. This script can be connected to a tasks database in Notion and update the Status and Due Date of tasks when they are completed.
+Notion is a great productivity tool for tracking goals, projects and tasks. However, achieving recurring tasks (tasks whos due date repeats at a set interval) is a hassle and requires manual intervention without external tools. Thanks to the Notion API we can access our task data programatically and make specific tasks recur automatically. This program can be connected to a tasks database in Notion and update the Status and Due Date of these tasks accordingly.
 
 ### Technologies
 
@@ -54,13 +53,8 @@ Thanks to the Notion API this changes as we can access our task data programatic
 To use the package do the following:
 
 1. Clone the repo and open it as the working directory
-2. Create a `.env` file containing your NOTION_KEY
-```
-# the .env file
-
-NOTION_KEY = "secret_string"
-```
-3. Run `pip install .` to install the script (in a venv if you want)
+2. Run `pip install .` to install the script (in a venv if you want)
+3. Get a Notion API key and setup your database as required
 4. Run `notion-recurring-tasks` to run the script
 5. [Optional] Set up a cronjob to run the script once per day
 
