@@ -27,7 +27,7 @@ for path in sorted(src.rglob("*.py")):
     nav[parts] = doc_path.as_posix()
 
     with mkdocs_gen_files.open(full_doc_path, "w") as fd:
-        header = ".".join(str(module_path).replace("\\","/").split("/"))
+        header = ".".join(str(module_path).replace("\\", "/").split("/"))
         fd.write(f"#{header.removesuffix('.__init__')}\n")
         ident = ".".join(parts)
         fd.write(f"::: {ident}")

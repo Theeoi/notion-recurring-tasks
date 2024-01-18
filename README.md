@@ -23,6 +23,30 @@ Thanks to the Notion API this changes as we can access our task data programatic
 - Set new Status and Due Date accoring to task properties
 - More features coming! See [Roadmap](#roadmap)..
 
+### Project Layout
+
+    .github/                        # Github Workflows
+    
+    docs/                           # Documentation Source
+
+    scripts/                        # Helper Scripts
+
+    src/                            # Package Source Code
+
+        notion_recurring_tasks/     # Main Package
+        README.md                   # Code Reference README
+
+    tests/                          # Pytest Tests
+
+        functional/                 # Testing if the code does the right things
+        unit/                       # Testing if the code does things right
+        conftest.py                 # Pytest Configuration
+
+    .gitignore                      # Ignoring unnecessary files
+    mkdocs.yml                      # Documentation Configuration
+    pyproject.toml                  # Project Meta Information
+    README.md                       # Project README
+
 ## Setup
 
 ### Usage
