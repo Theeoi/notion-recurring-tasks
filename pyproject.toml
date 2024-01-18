@@ -28,6 +28,7 @@
     "pytest >= 7.4.3, < 8",
     "pytest-cov >= 4.1.0, < 5",
     "pytest-mock >= 3.12.0, < 4",
+    "pyinstaller >= 6.3.0, < 7",
   ]
   docs = [
     "mkdocs >= 1.5.3, < 2",
@@ -39,7 +40,7 @@
   ]
 
 [tool.pytest.ini_options]
-  addopts = "-v --cov='src'"
+  addopts = "-v --cov=./src"
   testpaths = "tests"
 
 [project.urls]

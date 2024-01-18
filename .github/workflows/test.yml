@@ -20,8 +20,15 @@ jobs:
             - name: Install dependencies
               run: |
                 python -m pip install --upgrade pip
-                pip install '.[dev]'
+                pip install -e .'[dev]'
 
             - name: Run tests
               run: |
-                pytest
+                pytest --cov-report=xml
+
+            - name: Coveralls GitHub Action
+              uses: coverallsapp/github-action@v2.2.3
+              with:
+                github-token: ${{ secrets.GITHUB_TOKEN }}
+                path-to-lcov: coverage.xml
+            
