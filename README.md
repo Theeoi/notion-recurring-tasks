@@ -85,12 +85,12 @@ TODO:
 
 - [x] Implement testing suite
 - [x] Refactor script
+- [x] Add way to programatically add your own NOTION_KEY
 - [ ] Add documentation
-- [ ] Add --env flag to programatically add your own notion_key
 
 Room for Improvement:
 
-- Update this README (and docs) to allow non-tech users to add this to their Notion
+- Expand testing
 
 ## Contact
 
