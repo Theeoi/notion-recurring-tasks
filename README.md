@@ -10,7 +10,7 @@ Using the Notion API to achieve recurring tasks in Notion.
 
 ## General Information
 
-Notion is a great productivity tool for tracking goals, projects and tasks. However, achieving recurring tasks (tasks whos due date repeats at a set interval) is a hassle and requires manual intervention without external tools. Thanks to the Notion API we can access our task data programatically and make specific tasks recur automatically. This program can be connected to a tasks database in Notion and update the Status and Due Date of these tasks accordingly.
+Notion is a great productivity tool for tracking goals, projects and tasks. However, achieving recurring tasks (tasks whos due date repeats at a set interval) is a hassle and requires manual intervention without external tools. Thanks to the Notion API we can access our task data programatically and make specific tasks recur automatically. This software can be connected to a tasks database in Notion and update the Status and Due Date of these tasks accordingly.
 
 ### Technologies
 
