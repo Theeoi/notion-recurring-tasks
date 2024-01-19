@@ -19,7 +19,8 @@ Notion is a great productivity tool for tracking goals, projects and tasks. Howe
 
 ### Features
 
-- Detect recurring tasks in the Notion database
+- Connect to a Notion database through a Notion Integration
+- Detect recurring tasks in a connected Notion database
 - Set new Status and Due Date accoring to task properties
 - More features coming! See [Roadmap](#roadmap)..
 
@@ -43,6 +44,7 @@ Notion is a great productivity tool for tracking goals, projects and tasks. Howe
         conftest.py                 # Pytest Configuration
 
     .gitignore                      # Ignoring unnecessary files
+    .readthedocs.yml                # ReadTheDocs Configuration
     mkdocs.yml                      # Documentation Configuration
     pyproject.toml                  # Project Meta Information
     README.md                       # Project README
@@ -81,7 +83,7 @@ TODO:
 - [x] Implement testing suite
 - [x] Refactor script
 - [x] Add way to programatically add your own NOTION_KEY
-- [ ] Add documentation
+- [ ] Add complete documentation
 
 Room for Improvement:
 
