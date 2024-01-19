@@ -16,6 +16,9 @@
   classifiers = [
     "Programming Language :: Python",
     "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Intended Audience :: End Users/Desktop",
   ]
   dependencies = [
     "requests >= 2.31, < 3",
