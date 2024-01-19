@@ -6,6 +6,8 @@
 
 Using the Notion API to achieve recurring tasks in Notion.
 
+*[Read the full documentation on ReadTheDocs](https://notion-recurring-tasks.readthedocs.io/)*
+
 ## General Information
 
 Notion is a great productivity tool for tracking goals, projects and tasks. However, achieving recurring tasks (tasks whos due date repeats at a set interval) is a hassle and requires manual intervention without external tools. Thanks to the Notion API we can access our task data programatically and make specific tasks recur automatically. This program can be connected to a tasks database in Notion and update the Status and Due Date of these tasks accordingly.
@@ -19,7 +21,8 @@ Notion is a great productivity tool for tracking goals, projects and tasks. Howe
 
 ### Features
 
-- Detect recurring tasks in the Notion database
+- Connect to a Notion database through a Notion Integration
+- Detect recurring tasks in a connected Notion database
 - Set new Status and Due Date accoring to task properties
 - More features coming! See [Roadmap](#roadmap)..
 
@@ -43,6 +46,7 @@ Notion is a great productivity tool for tracking goals, projects and tasks. Howe
         conftest.py                 # Pytest Configuration
 
     .gitignore                      # Ignoring unnecessary files
+    .readthedocs.yml                # ReadTheDocs Configuration
     mkdocs.yml                      # Documentation Configuration
     pyproject.toml                  # Project Meta Information
     README.md                       # Project README
@@ -81,7 +85,7 @@ TODO:
 - [x] Implement testing suite
 - [x] Refactor script
 - [x] Add way to programatically add your own NOTION_KEY
-- [ ] Add documentation
+- [ ] Add complete documentation
 
 Room for Improvement:
 
