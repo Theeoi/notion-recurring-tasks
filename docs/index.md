@@ -6,34 +6,42 @@ Notion is a great productivity tool for tracking goals, projects and tasks. Howe
 
 ## Getting Started [Quickly]
 
-The program is available two ways; either by downloading an executable or running it from the source code. The easiest option is to download an executable.
+If you are getting started with the program for the first time is it recommended that you follow the full [Getting Started Tutorial](tutorial/getting-started.md). If not, here is a quick rundown of what needs to be done:
 
-No matter which option you choose some setup will be required of you. Namely, getting a Notion API key for the program to use and setting up the Notion database containing your (recurring) tasks.
-
-If you are setting up the project for the first time you can read the full [Getting Started Tutorial](tutorial/getting-started.md) to get started.
-
-### Commands
-
-* `notion-recurring-tasks` - Run the Notion Recurring Tasks main script.
+1. Download a [release of the program](https://github.com/Theeoi/notion-recurring-tasks/releases)
+    - Executable or Source code (Executable recommended for most users)
+2. Set up a [Notion Integration](https://www.notion.so/my-integrations) and get a Notion API key.
+3. Set up your Notion database with the required properties and integration
+4. Install and run the program
+    - The program will prompt you for the key from step 2
+5. [Optional] Automate the execution of the program
 
 ## Documentation Overview
 
-* [Tutorials](tutorial/index.md)
+- [Tutorials](tutorial/index.md)
 
-Learn how to use the Notion Recurring Tasks library in bite-sized chunks.
+Learn how to set up and use the Notion Recurring Tasks program in bite-sized chunks.
 
-* [How-to-guides](how-to-guide/index.md)
+- [How-to-guides](how-to-guide/index.md)
 
-Solve problems using the Notion Recurring Tasks library with a walkthrough.
+Solve problems with the Notion Recurring Tasks package by modifying the source code.
 
-* [Code Reference](reference/README.md)
+- [Code Reference](reference/README.md)
 
 Find information about the Notion Recurring Tasks code implementation.
 
-* [Explanations](explanation/index.md)
+- [Explanations](explanation/index.md)
 
-Gain deeper understanding of the Notion Recurring Tasks library with explanations.
+Gain deeper understanding of the Notion Recurring Tasks package with explanations.
 
 ## Support
 
-This project was created by Theodor Blom. Get in touch [via email](mailto:me@theodorblom.com).
+If you have an issue or question regarding this program I highly appreciate it if you would [submit an issue on the Github page](https://github.com/Theeoi/notion-recurring-tasks/issues). This way every inquiry is public and collected in a centralized place for me and others to assist you easily. Please take some time to look through the issues, chances are that your issue or question already has been answered.
+
+When submitting a new issue it is important to leave as much information as possible. More detailed issues have a higher chance of getting a quick response. Important details to include are:
+
+- What operating system are you using?
+- Is the issue related to the executable or the source code?
+- What error messages are you seeing, if any?
+- A thurough description of your issue
+- If applicable, how to reproduce your issue
