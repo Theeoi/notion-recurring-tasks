@@ -47,9 +47,11 @@ markdown_extensions:
 
 nav:
   - Home: index.md
+  - Demonstration: demonstration.md
   - Tutorials:
     - tutorial/index.md
     - Getting Started: tutorial/getting-started.md
+    - Automatically Running the Software: tutorial/automating-the-software.md
   - How-to-Guides:
     - how-to-guide/index.md
   - Code References: reference/
