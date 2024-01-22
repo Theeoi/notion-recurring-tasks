@@ -66,4 +66,8 @@ The final step is to add your previously created Notion integration to this data
 
 ## Running the Software
 
-## Going Further
+Congratulations! With your Notion database set up you are ready to run the software and try it out.
+
+As we saw earlier, the software prompts you for your Notion key upon starting up. Copy the secret key from your integration you created earlier and input it to the software. If everything is set up properly the software should print how many tasks it managed to update with a new Due Date according to the set properties. If not (or you are getting an error), please dubble check that everything is set up as instructed above.
+
+If you are still experiencing issues, please get in touch through the [support page](../index.md#support).
