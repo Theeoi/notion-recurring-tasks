@@ -44,9 +44,25 @@ After your integration is created you can change its capabilities on the 'Capabi
 
 The 'Secret' page contains the Notion key that is required to connect the software to your integration. We will use this key in a future step.
 
-> :warning: WARNING: DO NOT SHARE THIS NOTION KEY WITH ANYONE!
+> :warning: **WARNING**: DO NOT SHARE THIS NOTION KEY WITH ANYONE!
 
 ## Preparing your Task Database within Notion
+
+The next step is to create the necessary properties in your task database within Notion and add your newly created integration to it.
+
+In your task database, every task must have the following properties set up like below: *Archived, Status, Due Date, Recurring, RecurInterval and RecurUnit*. The two images show a demo task with the properties added as well as an overview of each property and how they are set up in the database. If you are unfamiliar with how to set up properties in a database, it is recommended to read [Thomas Franks guide](https://thomasjfrank.com/notion-databases-the-ultimate-beginners-guide/#database-properties) on the topic.
+
+> :grey_exclamation: **NOTE**: You can have more task properties than the minimum required. Add these to a new database or integrate the properties with your already existing tasks database.
+
+![Notion Task](../assets/img/getting-started-8.PNG)
+
+![Task Properties Overview](../assets/img/getting-started-9.PNG)
+
+The final step is to add your previously created Notion integration to this database. *On the page of the database*, press the three dots in the far upper right corner. Go to 'Add connections' and search for the name of your integration. Once added it should show up in the list of connections.
+
+> :grey_exclamation: **NOTE**: Since the connection is added to the database itself and not the workspace, the connection will not be visible on the connections list elsewhere.
+
+![Adding the Integration](../assets/img/getting-started-10.PNG)
 
 ## Running the Software
 
