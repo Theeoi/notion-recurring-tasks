@@ -28,6 +28,24 @@ If done successfully, you should now have the `notion-recurring-tasks` directory
 
 ## Setting up your Notion Integration
 
+Before moving onward with the software, it is required to allow the software to interact with your Notion. This is done through a [Notion Integration](https://www.notion.so/my-integrations). Navigate to that page and login using your Notion account.
+
+![Notion Integration Page](../assets/img/getting-started-4.PNG)
+
+On the Notion Integration page you should see something like the image above. Create your integration by pressing '+ Create new integration' and fill in some basic information like below. It is important to select the Notion Workspace in which your recurring tasks database will be. Choose a name that is descriptive of what the integration does and is easily identifiable. This will help you later.
+
+![New Integration Basicinfo](../assets/img/getting-started-5.PNG)
+
+![Change Integration Capabilities](../assets/img/getting-started-6.PNG)
+
+![Copy Integration Secret](../assets/img/getting-started-7.PNG)
+
+After your integration is created you can change its capabilities on the 'Capabilities' page. The Notion Recurring Tasks software only needs access to read and update tasks in your task database, and therefore it is recommended to limit it accordingly.
+
+The 'Secret' page contains the Notion key that is required to connect the software to your integration. We will use this key in a future step.
+
+> :warning: WARNING: DO NOT SHARE THIS NOTION KEY WITH ANYONE!
+
 ## Preparing your Task Database within Notion
 
 ## Running the Software

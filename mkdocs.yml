@@ -50,8 +50,6 @@ nav:
   - Tutorials:
     - tutorial/index.md
     - Getting Started: tutorial/getting-started.md
-    - Installing from Source: tutorial/install-from-source.md
-    - Building an Executable from Source: tutorial/build-from-source.md
   - How-to-Guides:
     - how-to-guide/index.md
   - Code References: reference/
