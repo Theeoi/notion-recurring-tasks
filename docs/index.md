@@ -10,13 +10,17 @@ If you are getting started with the software for the first time is it recommende
 
 1. Download a [release of the program](https://github.com/Theeoi/notion-recurring-tasks/releases)
     - Executable or Source code (Executable recommended for most users)
-2. Set up a [Notion Integration](https://www.notion.so/my-integrations) and get a Notion API key.
+2. Set up a [Notion Integration](https://www.notion.so/my-integrations) and get a Notion API key
 3. Set up your Notion database with the required properties and integration
-4. Install and run the program
+4. Install and run the software
     - The software will prompt you for the key from step 2
-5. [Optional] Automate the execution of the program
+5. [Optional] Automate the execution of the software
 
 ## Documentation Overview
+
+- [Demonstration](demonstration.md)
+
+See how the software updates Notion tasks marked for recurrance.
 
 - [Tutorials](tutorial/index.md)
 
@@ -40,8 +44,9 @@ If you have an issue or question regarding this software I highly appreciate it 
 
 When submitting a new issue it is important to leave as much information as possible. More detailed issues have a higher chance of getting a quick response. Important details to include are:
 
+- What are you trying to do?
+- What do you expect would happen?
+- What is really happening?
+  - What error message are you seeing, if any?
 - What operating system are you using?
-- Is the issue related to the executable or the source code?
-- What error messages are you seeing, if any?
-- A thurough description of your issue
-- If applicable, how to reproduce your issue
+- How would one reproduce your issue?

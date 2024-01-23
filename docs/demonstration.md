@@ -4,7 +4,7 @@ The purpose of the Notion Recurring Tasks software is to detect tasks in your No
 
 ![Recurring Task](assets/img/demonstration-1.PNG)
 
-The above task is done and marked to recur with all properties set. The Status is reset to 'Not started' and the Due Date is set to the new date accoring to the recur properties.
+The above task is done and marked to recur with all properties set. The Status is reset to 'Not started' and the Due Date is set to the new date accoring to the recur properties. The available units are: Days, Weeks, Months and Years.
 
 ![Recurring Task Without Due Date](assets/img/demonstration-2.PNG)
 

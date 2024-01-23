@@ -7,6 +7,8 @@ validation:
 
 theme:
   name: "material"
+  logo: assets/icon/white.png
+  favicon: assets/icon/black.png
   palette:
     scheme: slate
     primary: black
