@@ -1,5 +1,7 @@
 # Notion Recurring Tasks
 
+<img alt="Logo" src="docs/assets/icon/white.png" align="right" width="128px"/>
+
 ![Pytest Status](https://github.com/Theeoi/notion-recurring-tasks/actions/workflows/test.yml/badge.svg?label=Tests)
 ![Coverage Status](https://coveralls.io/repos/github/Theeoi/notion-recurring-tasks/badge.svg?branch=main)
 ![Documentation Status](https://readthedocs.org/projects/notion-recurring-tasks/badge/?version=latest)

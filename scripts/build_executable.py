@@ -41,6 +41,7 @@ def build_executable(name: str, path: str) -> None:
         [
             "--clean",
             "--noconfirm",
+            "--icon=docs/assets/icon/black.ico",
             "--add-data=README.md:.",
             f"--name={name}",
             f"src/{path}",
