@@ -6,7 +6,7 @@ Notion is a great productivity tool for tracking goals, projects and tasks. Howe
 
 ## Getting Started [Quickly]
 
-If you are getting started with the software for the first time is it recommended that you follow the full [Getting Started Tutorial](tutorial/getting-started.md). If not, here is a quick rundown of what needs to be done:
+If you are getting started with the software for the first time is it recommended that you follow the full [Getting Started Tutorial](tutorial/getting-started/index.md). If not, here is a quick rundown of what needs to be done:
 
 1. Download a [release of the program](https://github.com/Theeoi/notion-recurring-tasks/releases)
     - Executable or Source code (Executable recommended for most users)
