@@ -49,6 +49,7 @@ Notion is a great productivity tool for tracking goals, projects and tasks. Howe
 
     .gitignore                      # Ignoring unnecessary files
     .readthedocs.yml                # ReadTheDocs Configuration
+    LICENCE.md                      # MIT Licence
     mkdocs.yml                      # Documentation Configuration
     pyproject.toml                  # Project Meta Information
     README.md                       # Project README
@@ -57,27 +58,32 @@ Notion is a great productivity tool for tracking goals, projects and tasks. Howe
 
 ### Usage
 
-To use the package do the following:
+To get started with this package it is recommended to follow the [Getting Started tutorial](https://notion-recurring-tasks.readthedocs.io/tutorial/getting-started) in the full documentation.
 
-1. Clone the repo and open it as the working directory
-2. Run `pip install .` to install the script (in a venv if you want)
-3. Get a Notion API key and setup your database as required
-4. Run `notion-recurring-tasks` to run the script
-5. [Optional] Set up a cronjob to run the script once per day
+But if you are feeling dangerous, here is the quick rundown:
+
+1. Download a [release of the program](https://github.com/Theeoi/notion-recurring-tasks/releases)
+2. Set up a [Notion Integration](https://www.notion.so/my-integrations) and get a Notion API key
+3. Set up your Notion database with the required properties and integration
+4. Install and run the software
+    - The software will prompt you for the key from step 2
+5. [Optional] Automate the execution of the software
 
 ### Contributing
 
-To develop this code you should do the following:
+To contribute or modify this code you should do the following:
 
-1. Follow the steps outlined in [Usage](#usage) to get the package running
-2. Create a Python virtual environment using your prefered program
-3. Activate the virtual environment and run `pip install .[dev]` to install the development dependancies
-4. Run the tests using `pytest`
-5. Make your pull-requests to the `dev` branch
+1. Fork this repository
+2. Clone your forked repo and `cd` into it
+3. Create a Python virtual environment and activate it
+4. Run `python -m pip install .[dev]` to install the development dependencies
+5. Make your changes as appropriate
+6. Test your code using `pytest`
+7. [Optional] Make a pull request to this repository
 
 ## Project Status
 
-The code has been cleaned up and tests are added. The focus is now on getting this package published and create documentation such that *anyone* can use it.
+The first release is published and the documentation is being caught up to cover all aspects of the software. Documentation is done to the degree that *anyone* can get started with the software, but not to the degree where *anyone* could modify the software to fit their needs.
 There are currently no new features planned.
 
 ### Roadmap
