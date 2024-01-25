@@ -1,13 +1,13 @@
 # Tutorials
 
-This part of the project documentation focuses on a **learning-oriented** approach. You'll learn how to get started with the code of this project.
+This section of the documentation focus on taking a *learning-oriented* approach to the software. Included tutorials will be concrete and avoid distractions to keep you moving forward with the software. If you are interested in solving practical issues or understanding the software more in-depth, check out the [how-to-guides](../how-to-guide/index.md) and [explanation](../explanation/index.md) sections.
 
-> **Note:** Expand this section by considering the following points:
+The available tutorials are:
 
-- Help newcomers with getting started
-- Teach readers about your library by making them write code
-- Inspire confidence through examples that work for everyone, repeatably
-- Give readers an immediate sense of achievement
-- Show concrete examples, no abstractions
-- Provide the minimum necessary explanation
-- Avoid distractions
+- [Getting Started](getting-started/index.md)
+
+Learn how to get started using this software with easy-to-follow steps.
+
+- [Automatically Running the Software](automating-the-software.md)
+
+Learn how to automate updating your recurring tasks by running this software automatically.
