@@ -52,7 +52,9 @@ nav:
   - Demonstration: demonstration.md
   - Tutorials:
     - tutorial/index.md
-    - Getting Started: tutorial/getting-started.md
+    - Getting Started:
+      - tutorial/getting-started/index.md
+      - Alternatives to Downloading the Finished Executable: tutorial/getting-started/alternatives-to-download.md
     - Automatically Running the Software: tutorial/automating-the-software.md
   - How-to-Guides:
     - how-to-guide/index.md
