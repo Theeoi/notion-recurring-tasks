@@ -8,12 +8,15 @@ There are many options available for automatically calling software. Below are a
 
 - [Scheduling Cron Jobs with Crontab](https://linuxize.com/post/scheduling-cron-jobs-with-crontab/)
 - [Use Launchd to Run Scripts on Schedule](https://www.maketecheasier.com/use-launchd-run-scripts-on-schedule-macos/)
+- [Run Cron Jobs Using Github Actions](https://medium.com/nerd-for-tech/lets-run-cron-jobs-using-github-actions-df64496ffc4a)
 
 **Linux**
 
 - [Scheduling Cron Jobs with Crontab](https://linuxize.com/post/scheduling-cron-jobs-with-crontab/)
 - [Run a Script on Startup](https://www.baeldung.com/linux/run-script-on-startup)
+- [Run Cron Jobs Using Github Actions](https://medium.com/nerd-for-tech/lets-run-cron-jobs-using-github-actions-df64496ffc4a)
 
 **Windows**
 
 - [How to use Task Scheduler on Windows](https://www.tomsguide.com/how-to/how-to-use-task-scheduler-on-windows)
+- [Run Cron Jobs Using Github Actions](https://medium.com/nerd-for-tech/lets-run-cron-jobs-using-github-actions-df64496ffc4a)
