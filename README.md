@@ -1,4 +1,4 @@
-# Notion Recurring Tasks
+# Notion Recurring Tasks [Archived]
 
 <img alt="Logo" src="docs/assets/icon/white.png" align="right" width="128px"/>
 
@@ -11,6 +11,11 @@ Using the Notion API to achieve recurring tasks in Notion.
 *[Read the full documentation on ReadTheDocs](https://notion-recurring-tasks.readthedocs.io/)*
 
 ## General Information
+
+***This repo is archived and is no longer maintained.
+I have moved away from Notion in favor of [Obsidian](https://obsidian.md/) and
+with the introduction of automations in Notion this type of tool is no longer
+needed.***
 
 Notion is a great productivity tool for tracking goals, projects and tasks. However, achieving recurring tasks (tasks whos due date repeats at a set interval) is a hassle and requires manual intervention without external tools. Thanks to the Notion API we can access our task data programatically and make specific tasks recur automatically. This software can be connected to a tasks database in Notion and update the Status and Due Date of these tasks accordingly.
 
